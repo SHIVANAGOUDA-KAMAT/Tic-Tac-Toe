@@ -1,0 +1,99 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border-style: none;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    background-color: rgb(40, 52, 63);
+}
+
+main {
+    margin: auto auto;
+    width: 90vw;
+    height: 90vw;
+    background-color: rgba(253, 20, 3, 0.918);
+    box-shadow: 0 0 15px;
+}
+
+main p {
+    font-family: "arial";
+    font-size: 25px;
+    font-weight: 500;
+}
+
+section {
+    display: grid;
+    grid-template-rows: repeat(3, 27vw);
+    grid-template-columns: repeat(3, 29.7vw);
+    gap: 1px;
+}
+
+.button {
+    font-family: cursive;
+    font-size: 40px;
+    font-weight: 800;
+    background-color: whitesmoke;
+    color: #696969;
+}
+
+.refresh {
+    margin: 15px auto;
+    background-image: url(refresh.png); 
+    background-size: 100% 100%; 
+    background-color: rgba(39, 191, 202, 0.801); 
+    display: block; 
+    width: 50px; 
+    height: 50px; 
+    border-radius: 50%;
+
+}
+
+@media only screen and (min-width:500px){
+    section {
+        grid-template-rows: repeat(3, 27.83vw);
+        grid-template-columns: repeat(3, 29.5vw);
+        gap: 5px;
+    }
+
+    main{
+        height: 93vw;
+    }
+
+    main p{
+        font-size: 45px;
+    }
+
+    .refresh {
+        margin: 35px auto; 
+        width: 70px; 
+        height: 70px;
+    }
+}
+
+@media only screen and (min-width:900px){
+    main{
+        width: 30vw;
+        height: calc(30vw + 62px);
+    }
+
+    section {
+        grid-template-rows: repeat(3, 9.65vw);
+        grid-template-columns: repeat(3, 9.65vw);
+        gap: 0.5vw;
+    }
+
+    main p{
+        font-size: 45px;
+    }
+
+    .refresh {
+        margin: 20px auto; 
+        width: 50px; 
+        height: 50px;
+    }
+}
